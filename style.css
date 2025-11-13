@@ -1,0 +1,535 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f6fa;
+    }
+
+    /* ---------- TOP NAV ---------- */
+    .navbar {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 60px;
+      color: #fff;
+    }
+
+    .logo img {
+      width: 200px;
+    }
+
+    .navbar .right {
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar .right a {
+      color: #005b9f;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .navbar .right a:hover {
+      opacity: 0.8;
+    }
+
+    /* ---------- BOTTOM NAV ---------- */
+    .subnav {
+      background-color: #014a84;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 60px;
+      color: #fff;
+    }
+
+    .subnav .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background-color: #fff;
+      color: #333;
+      min-width: 200px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 6px;
+      padding: 6px 12px;
+      width: 450px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      padding: 6px;
+    }
+
+    .search-bar img {
+      width: 20px;
+      opacity: 0.6;
+    }
+
+    .subnav .right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .subnav .right a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .subnav .right img {
+      width: 20px;
+      filter: brightness(0) invert(1);
+    }
+
+    .basket {
+      position: relative;
+    }
+
+    .basket span {
+      position: absolute;
+      top: -6px;
+      right: -10px;
+      background: #ff9f1a;
+      color: #fff;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+.basket {
+  font-size: 18px;
+}
+
+.category-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.category-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+ /* ---------- FOOTER ---------- */
+    footer {
+      background-color: #0b0302;
+      color: #fff;
+      padding: 50px 60px 20px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 30px;
+    }
+
+    .footer-logo img {
+      width: 200px;
+      margin-bottom: 25px;
+      
+    }
+
+    .footer-column h3 {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #ff6600;
+    }
+
+    .contact-info p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .contact-info a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .newsletter p {
+      color: #ccc;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .newsletter input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .newsletter button {
+      width: 100%;
+      background: linear-gradient(90deg, #ff6600, #ff8c1a);
+      border: none;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .newsletter button:hover {
+      opacity: 0.9;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #bbb;
+    }
+
+    @media (max-width: 900px) {
+      .navbar, .subnav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+
+      .search-bar {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .categories {
+        padding: 30px 20px;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-column h3 {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-column, .footer-logo {
+        text-align: center;
+      }
+
+      .footer-social {
+        justify-content: center;
+      }
+    }
+
+
+
+    /* ===================================== */
+.mega-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.mega-btn {
+  background: #e50914;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.mega-btn:hover {
+  background: #b10710;
+}
+
+/* MAIN MENU PANEL */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  z-index: 1000;
+  padding: 10px 0;
+  min-width: 250px;
+}
+
+/* SHOW MENU ON HOVER */
+.mega-dropdown:hover .mega-menu {
+  display: block;
+}
+
+/* LEVEL 1 — vertical list */
+.level-1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.level-1 > li {
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.level-1 > li > a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.level-1 > li > a:hover {
+  background: #f5f5f5;
+  color: #e50914;
+  font-weight: 600;
+}
+
+/* NESTED MENUS (Right-side flyout) */
+.level-2, .level-3, .level-4 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 200px;
+  z-index: 1001;
+  padding: 5px 0;
+}
+
+.level-2 li, .level-3 li, .level-4 li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.level-2 li:last-child, .level-3 li:last-child, .level-4 li:last-child {
+  border-bottom: none;
+}
+
+/* SHOW SUBMENU ON HOVER */
+.level-1 > li:hover > .level-2,
+.level-2 > li:hover > .level-3,
+.level-3 > li:hover > .level-4 {
+  display: block;
+}
+
+/* LINK STYLING */
+.mega-menu a {
+  display: block;
+  padding: 8px 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.mega-menu a:hover {
+  background: #f5f5f5;
+  color: #e50914;
+  font-weight: 600;
+}
+
+/* --- CSS for the "Go Back" Button --- */
+
+.btn-primary {
+    /* Layout and Spacing */
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; 
+    
+    /* Appearance */
+    border: none;
+    border-radius: 5px;
+    
+    /* Colors (Matching your Vanel blue scheme) */
+    background-color: #005b9f; /* Main brand blue */
+    color: #fff; /* White text */
+    
+    /* Text */
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none; 
+    
+    /* Interactivity */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #014a84; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow lift */
+}
+
+.btn-primary:active {
+    /* Push down effect on click */
+    background-color: #00375e; 
+    transform: translateY(1px); 
+    box-shadow: none;
+}
+
+
+/* ========================================== */
+
+/* style.css (Relevant section for the button) */
+
+.btn-primary {
+    /* Layout and Spacing */
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; 
+    
+    /* Appearance */
+    border: none;
+    border-radius: 5px;
+    
+    /* Colors (Matching your Vanel blue scheme) */
+    background-color: #005b9f; /* Main brand blue */
+    color: #fff; /* White text */
+    
+    /* Text */
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none; 
+    
+    /* Interactivity */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #014a84; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow lift */
+}
+
+.btn-primary:active {
+    /* Push down effect on click */
+    background-color: #00375e; 
+    transform: translateY(1px); 
+    box-shadow: none;
+}
+
+/* Style for the back button specifically, if needed to float it */
+.back-btn {
+    /* Ensures the button sits below the grid */
+    display: block; 
+    width: fit-content;
+    margin-left: 0;
+}
